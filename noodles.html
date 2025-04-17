@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noodles Recipe - Asian Cuisine</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Noodles Recipe</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="ASIAN RECIPES">
+            <h2>Noodles - Asian Favorite</h2>
+            <div class="recipe-card">
+                <img src="https://www.w3schools.com/w3images/noodles.jpg" alt="Noodles">
+                <div class="recipe-details">
+                    <h3>Stir-Fried Veg Noodles</h3>
+                    <p>This stir-fried noodle dish is a flavorful and satisfying Asian recipe made with mixed vegetables, soy sauce, garlic, and spring onions. A quick and delicious meal perfect for any time of the day.</p>
+                    <button onclick="showFullNoodleRecipe()">View Full Recipe</button>
+
+                    <div id="noodle-recipe-steps" class="recipe-text" style="display: none;">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>200g noodles</li>
+                            <li>1 tbsp oil</li>
+                            <li>1 cup sliced vegetables (carrots, bell peppers, cabbage)</li>
+                            <li>2 garlic cloves (minced)</li>
+                            <li>2 tbsp soy sauce</li>
+                            <li>1 tbsp chili sauce (optional)</li>
+                            <li>Salt and pepper to taste</li>
+                            <li>Chopped spring onions for garnish</li>
+                        </ul>
+                        <h4>Instructions:</h4>
+                        <ol>
+                            <li>Boil the noodles according to package instructions. Drain and set aside.</li>
+                            <li>Heat oil in a wok or large pan over medium heat.</li>
+                            <li>Add minced garlic and stir-fry for a few seconds until fragrant.</li>
+                            <li>Add vegetables and stir-fry for 2-3 minutes.</li>
+                            <li>Add boiled noodles, soy sauce, and chili sauce.</li>
+                            <li>Toss everything well and cook for another 2 minutes.</li>
+                            <li>Season with salt and pepper. Garnish with chopped spring onions.</li>
+                            <li>Serve hot and enjoy your delicious stir-fried noodles!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Noodles Recipe | Asian Cuisine</p>
+    </footer>
+
+    <script>
+        function showFullNoodleRecipe() {
+            const recipe = document.getElementById('noodle-recipe-steps');
+            recipe.style.display = recipe.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>
