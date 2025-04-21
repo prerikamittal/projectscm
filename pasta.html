@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Recipe - Italian Cuisine</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Pasta Recipe</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="ITALIAN RECEPIES">
+            <h2>Pasta - Italian Delight</h2>
+            <div class="recipe-card">
+                <img src="https://www.w3schools.com/w3images/pasta.jpg" alt="Pasta">
+                <div class="recipe-details">
+                    <h3>Classic Tomato Basil Pasta</h3>
+                    <p>This classic Italian pasta combines al dente spaghetti with rich tomato sauce, fresh garlic, and basil leaves. It’s a quick and comforting meal, loved for its simplicity and flavor.</p>
+                    <button onclick="showFullRecipe()">View Full Recipe</button>
+
+                    <div id="recipe-steps" class="recipe-text" style="display: none;">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>200g spaghetti</li>
+                            <li>2 cups tomato puree</li>
+                            <li>2 garlic cloves, minced</li>
+                            <li>Fresh basil leaves</li>
+                            <li>2 tbsp olive oil</li>
+                            <li>Salt and pepper to taste</li>
+                            <li>Grated Parmesan (optional)</li>
+                        </ul>
+                        <h4>Instructions:</h4>
+                        <ol>
+                            <li>Boil spaghetti in salted water until al dente. Drain and set aside.</li>
+                            <li>In a pan, heat olive oil and sauté minced garlic until fragrant.</li>
+                            <li>Add tomato puree, salt, and pepper. Simmer for 10 minutes.</li>
+                            <li>Stir in basil leaves and cooked spaghetti. Toss to combine.</li>
+                            <li>Serve hot with a sprinkle of Parmesan cheese, if desired.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Pasta Recipe | Italian Cuisine</p>
+    </footer>
+
+    <script>
+        function showFullRecipe() {
+            const recipe = document.getElementById("recipe-steps");
+            recipe.style.display = recipe.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>
