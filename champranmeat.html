@@ -3,72 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Champaran Mutton Recipe - Traditional Bihari Dish</title>
-    <link rel="stylesheet" href="champaranmutton.css">
+    <title>Champaran Meat Recipe</title>
+    <link rel="stylesheet" href="champaran.css">
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <div class="container">
-            <h1>Champaran Mutton Recipe</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Recipes</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <h1>Bihar Recipes (Champaran Meat)</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Content Section -->
     <main>
-        <section id="champaran-mutton-recipe">
-            <h2>Champaran Mutton - Smoky Clay Pot Goat Curry</h2>
+        <!-- Champaran Meat Recipe -->
+        <section id="champaran-recipe">
             <div class="recipe-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Champaran_Mutton.jpg" alt="Champaran Mutton">
-                <div class="recipe-details">
-                    <h3>Authentic Champaran Mutton Recipe</h3>
-                    <p>Champaran Mutton, also known as Ahuna Mutton, is a slow-cooked dish from Bihar prepared in a sealed clay pot. It features marinated goat meat cooked with whole spices, garlic, and mustard oil for a rich, smoky flavor.</p>
-                    <button onclick="showFullRecipe()">View Full Recipe</button>
+                <img src="data:image/jpeg;base64,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" alt="Champaran Meat">
+                <h2>Champaran Meat</h2>
+                <p><strong>Prep Time:</strong> 20 mins</p>
+                <p><strong>Cook Time:</strong> 1.5 hrs</p>
+                <p><strong>Servings:</strong> 4</p>
+                
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>1 kg mutton (bone-in)</li>
+                    <li>2 large onions (sliced)</li>
+                    <li>1 cup mustard oil</li>
+                    <li>1 tbsp garlic paste</li>
+                    <li>1 tbsp ginger paste</li>
+                    <li>2 tsp red chili powder</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tbsp coriander powder</li>
+                    <li>Salt to taste</li>
+                    <li>Whole spices (bay leaf, cardamom, cinnamon)</li>
+                </ul>
 
-                    <div id="recipe-steps" class="recipe-text" style="display: none;">
-                        <h4>Ingredients:</h4>
-                        <ul>
-                            <li>1 kg mutton (goat meat)</li>
-                            <li>1 cup mustard oil</li>
-                            <li>2 whole garlic bulbs (peeled)</li>
-                            <li>2 onions, finely sliced</li>
-                            <li>1 cup yogurt</li>
-                            <li>2 tsp ginger paste</li>
-                            <li>2 tsp red chili powder</li>
-                            <li>1 tsp turmeric powder</li>
-                            <li>1 tsp garam masala</li>
-                            <li>Salt to taste</li>
-                            <li>Whole spices (bay leaves, cinnamon, cloves, black cardamom)</li>
-                            <li>Fresh coriander leaves (for garnish)</li>
-                        </ul>
-                        <h4>Instructions:</h4>
-                        <ol>
-                            <li>Heat mustard oil until smoking. Let it cool slightly.</li>
-                            <li>Marinate mutton with all ingredients including oil and whole spices. Let it sit for 1–2 hours.</li>
-                            <li>Place the marinated mutton in a clay pot or heavy-bottomed pan. Seal with dough or foil to trap steam.</li>
-                            <li>Cook on low heat for 2–3 hours, shaking the pot occasionally to prevent sticking.</li>
-                            <li>Once the meat is tender and oil separates, open the seal and garnish with fresh coriander.</li>
-                            <li>Serve hot with plain rice, roti, or litti.</li>
-                        </ol>
-                    </div>
-                </div>
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Heat mustard oil in a heavy-bottomed pot and temper with whole spices.</li>
+                    <li>Add onions and sauté until golden brown.</li>
+                    <li>Stir in garlic and ginger paste, cook for a few minutes.</li>
+                    <li>Add all powdered spices and salt, cook until oil separates.</li>
+                    <li>Add mutton pieces, mix well to coat with spices.</li>
+                    <li>Cook covered on low heat for 1 to 1.5 hours, stirring occasionally.</li>
+                    <li>The mutton should be tender and coated in thick masala.</li>
+                    <li>Serve hot with rice or roti.</li>
+                </ol>
             </div>
         </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Champaran Mutton Recipe | Traditional Bihari Dish</p>
+        <p>&copy; 2025 Recipe Spot. All rights reserved.</p>
     </footer>
 
-    <script src="champaranmutton.js"></script>
 </body>
 </html>
