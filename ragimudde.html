@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragi Mudde Recipe</title>
+
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Section */
+        main {
+            padding: 20px;
+        }
+
+        /* Recipe Card */
+        .recipe-card {
+            display: flex;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .recipe-card img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-details {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .recipe-details h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .recipe-details p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Recipe Text */
+        .recipe-text {
+            margin-top: 20px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e;
+            color: white;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .recipe-card {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .recipe-card img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>South Indian Recipes (Ragi Mudde)</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="ragi-mudde-recipe">
+            <div class="recipe-card">
+                <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sibyl_sundar/Ragi_Mudde.jpg" alt="Ragi Mudde">
+                <div class="recipe-details">
+                    <h3>Traditional Ragi Mudde Recipe</h3>
+                    <p>Ragi Mudde is a nutritious Karnataka specialty made with finger millet flour. It’s soft, healthy, and best enjoyed with spicy sambar or saaru!</p>
+                    <button onclick="showFullRecipe()">View Full Recipe</button>
+
+                    <div id="ragi-mudde-recipe-steps" class="recipe-text" style="display: none;">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>1 cup ragi (finger millet) flour</li>
+                            <li>2 cups water</li>
+                            <li>Salt to taste</li>
+                        </ul>
+
+                        <h4>Instructions:</h4>
+                        <ol>
+                            <li>Boil 2 cups of water in a deep heavy-bottomed pan with a pinch of salt.</li>
+                            <li>Reserve a little boiling water, and reduce the heat to low.</li>
+                            <li>Gradually add ragi flour to the center without stirring initially.</li>
+                            <li>Cover and let it cook for 2-3 minutes on low heat.</li>
+                            <li>After that, stir vigorously with a wooden stick or ladle to mix everything well into a thick mass without lumps.</li>
+                            <li>Cover and cook again for 2-3 minutes.</li>
+                            <li>Switch off the flame and allow it to cool slightly.</li>
+                            <li>Wet your palms with water, take portions, and roll them into smooth balls.</li>
+                            <li>Serve hot with spicy sambar, saaru, or chutney!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ragi Mudde Recipe | South Indian Cuisine</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showFullRecipe() {
+            const recipeContainer = document.getElementById("ragi-mudde-recipe-steps");
+
+            // Show full recipe
+            recipeContainer.style.display = "block";
+
+            // Disable the button
+            const button = document.querySelector("button");
+            button.disabled = true;
+            button.textContent = "Recipe Revealed!";
+        }
+    </script>
+
+</body>
+</html>
