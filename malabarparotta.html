@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malabar Parotta Recipe</title>
+
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        header .logo h1 {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Section */
+        main {
+            padding: 20px;
+        }
+
+        /* Recipe Card */
+        .recipe-card {
+            display: flex;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .recipe-card img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-details {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .recipe-details h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .recipe-details p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Recipe Text */
+        .recipe-text {
+            margin-top: 20px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e;
+            color: white;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .recipe-card {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .recipe-card img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>South Indian Recipes (Malabar Parotta)</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="malabar-parotta-recipe">
+            <div class="recipe-card">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malabar-parotta-recipe.jpg" alt="Malabar Parotta">
+                <div class="recipe-details">
+                    <h3>Flaky Malabar Parotta Recipe</h3>
+                    <p>Malabar Parotta is a famous layered flatbread from Kerala, known for its flaky texture. It's soft inside, crispy outside, and best served with kurma or curry.</p>
+                    <button onclick="showFullRecipe()">View Full Recipe</button>
+
+                    <div id="malabar-parotta-recipe-steps" class="recipe-text" style="display: none;">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>2 cups all-purpose flour (maida)</li>
+                            <li>1 tsp sugar</li>
+                            <li>1 tsp salt</li>
+                            <li>2 tbsp oil + more for cooking</li>
+                            <li>Water (as needed for kneading)</li>
+                        </ul>
+
+                        <h4>Instructions:</h4>
+                        <ol>
+                            <li>In a bowl, mix flour, salt, sugar, and 2 tbsp oil.</li>
+                            <li>Gradually add water and knead to make a soft, smooth dough.</li>
+                            <li>Cover the dough with a damp cloth and let it rest for 1-2 hours.</li>
+                            <li>Divide the dough into small balls.</li>
+                            <li>Roll each ball very thin, apply some oil, and pleat (fold like a paper fan).</li>
+                            <li>Roll the pleated dough into a spiral and flatten slightly.</li>
+                            <li>Roll out gently into a disc shape without losing the layers.</li>
+                            <li>Heat a tawa (griddle) and cook the parotta with some oil until golden brown on both sides.</li>
+                            <li>After cooking, fluff the parotta by gently clapping it between your palms (optional for layers).</li>
+                            <li>Serve hot with vegetable kurma, chicken curry, or salna!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Malabar Parotta Recipe | South Indian Cuisine</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showFullRecipe() {
+            const recipeContainer = document.getElementById("malabar-parotta-recipe-steps");
+
+            // Show the full recipe
+            recipeContainer.style.display = "block";
+
+            // Disable the button after revealing
+            const button = document.querySelector("button");
+            button.disabled = true;
+            button.textContent = "Recipe Revealed!";
+        }
+    </script>
+
+</body>
+</html>
